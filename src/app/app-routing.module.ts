@@ -14,6 +14,8 @@ import {
 import { NavbarComponent } from './navbar/navbar.component';
 import { FileuComponent } from './components/fileu/fileu.component';
 import { SearchComponent } from './components/search/search.component';
+import { TimetableComponent } from './components/timetable/timetable.component';
+import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,13 +27,15 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
+  {path : 'navbar/timetable', component : TimetableComponent},
   {path : 'navbar/home', component : HomeComponent},
   {path : 'navbar/vehicle', component : VehicleComponent},
   {path : 'navbar/quarter', component : QuarterComponent},
   {path : 'navbar/home1',component : Home1Component},
   {path : 'navbar', component : NavbarComponent},
   {path : "navbar/fileu" , component : FileuComponent},
-  {path : "navbar/search", component : SearchComponent}
+  {path : "navbar/search", component : SearchComponent},
+  {path : "navbar/register", component : RegisterComponent}
 ];
 
 @NgModule({

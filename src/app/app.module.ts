@@ -32,6 +32,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FileuComponent } from './components/fileu/fileu.component';
 import { getStorage, provideStorage } from '@angular/fire/storage';
+import { TimetableComponent } from './components/timetable/timetable.component';
+import { RegisterComponent } from './components/register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,8 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
     LandingComponent,
     LoginComponent,
     FileuComponent,
+    TimetableComponent,
+    RegisterComponent,
 
   ],
   imports: [

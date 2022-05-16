@@ -18,4 +18,7 @@ export class AuthService {
   login(email: string, password: string): Observable<any> {
     return from(signInWithEmailAndPassword(this.auth, email, password));
   }
+  logout(): Observable<any> {
+    return from(this.auth.signOut());
+  }
 }

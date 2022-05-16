@@ -10,6 +10,7 @@ import { IBook } from '../book.model';
 import { NgForm } from '@angular/forms';
 import { veh } from '../vehicle.model';
 import { quar } from '../quar.model';
+import { a12 } from 'src/hiru.model';
 @Injectable({
   providedIn: 'root'
 })
@@ -23,6 +24,10 @@ export class BookService {
   getBooks(): Observable<IBook[]> {
     const booksRef = collection(this.firestore, 'Bank');
     return collectionData(booksRef, { idField: 'id' }) as Observable<IBook[]>;
+  }
+  getBooks4(): Observable<a12[]> {
+    const booksRef = collection(this.firestore, 'users');
+    return collectionData(booksRef, { idField: 'id' }) as Observable<a12[]>;
   }
   getBooks1(): Observable<det[]> {
     const booksRef1 = collection(this.firestore, 'Details');
