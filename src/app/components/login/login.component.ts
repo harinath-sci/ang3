@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
         error: ({ message }) => `There was an error: ${message} `
       })
     ).subscribe(() => {
-      this.router.navigate(['']);
+      this.router.navigate(['/navbar']);
     });
 }
 

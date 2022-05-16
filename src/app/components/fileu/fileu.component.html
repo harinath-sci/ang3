@@ -1,5 +1,24 @@
 
- 
-<input #inputField type="file" (change)="uploadFile($event)" />
+<div style="padding: 50px;"
+class="form-container mat-elevation-z5 text-center"
+*ngIf="user$ | async as user"
+>
+<h2 style="border-right: 200px;">UPLOAD 10TH CERTIFICATE</h2>
+<input #inputField type="file" (change)="uploadFile($event,user)" />
+</div>
+<div style="padding: 50px;"
+class="form-container mat-elevation-z5 text-center"
+*ngIf="user$ | async as user"
+>
+<h2 style="border-right: 200px;">UPLOAD 12TH CERTIFICATE</h2>
+<input #inputField type="file" (change)="uploadFile1($event,user)" />
+</div>
+<div style="padding: 50px;"
+class="form-container mat-elevation-z5 text-center"
+*ngIf="user$ | async as user"
+>
+<h2 style="border-right: 200px;">UPLOAD B.Tech CERTIFICATE</h2>
+<input #inputField type="file" (change)="uploadFile3($event,user)" />
+</div>
 
 

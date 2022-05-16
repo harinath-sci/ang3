@@ -15,13 +15,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FileuComponent } from './components/fileu/fileu.component';
 import { SearchComponent } from './components/search/search.component';
 const routes: Routes = [
-  {path : 'home', component : HomeComponent},
-  {path : 'vehicle', component : VehicleComponent},
-  {path : 'quarter', component : QuarterComponent},
-  {path : 'home1',component : Home1Component},
+  {
+    path: '',
+    pathMatch: 'full',
+    component: LandingComponent,
+  },
+  {path:'login',component:LoginComponent },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {path : 'navbar/home', component : HomeComponent},
+  {path : 'navbar/vehicle', component : VehicleComponent},
+  {path : 'navbar/quarter', component : QuarterComponent},
+  {path : 'navbar/home1',component : Home1Component},
   {path : 'navbar', component : NavbarComponent},
-  {path : "fileu" , component : FileuComponent},
-  {path : "search", component : SearchComponent}
+  {path : "navbar/fileu" , component : FileuComponent},
+  {path : "navbar/search", component : SearchComponent}
 ];
 
 @NgModule({
